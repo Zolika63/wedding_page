@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+
+h1,h2,p,img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349; /* grey - default text color */
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+}
+
+div {                  /* a konténerek alap formázása */
+  padding: 5px;
+  margin: 0px auto;
+  /*border: 1px solid grey;*/
+  border-radius: 0px;
+}
+/* a használt betűtípusok
+font-family: "Great Vibes", cursive;
+font-family: "Libre Baskerville", serif;
+font-family: "Muli", sans-serif;
+*/
+
+a {                       /* a linkek betűszíne */
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  transition: color .15s ease-in-out;
+  color: #eda087;
+}
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.header {
+  background: url('https://i.imgur.com/Ss8UZjW.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% top;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1200px;
+  /*min-width: 320px;*/
+  display: table;
+  border: 1px solid grey;
+  border-radius: 0px;
+}
+.hatter {
+  display: table-cell;   /* a .cim a .header egyetlen cellája */
+  vertical-align: top; /* a cella középre rendezése */
+}
+
+.cim {
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.6);
+  margin: 0 auto 3px;
+  border-radius: 6px;
+  border: 1px solid grey;
+  width: 200px;
+ }
+
+.cim p {
+  font-size: .7rem;
+  letter-spacing: .15rem;
+  margin: 0;
+  }
+
+.cim h1 {
+  font-size: 2rem;
+  color: #d2ba87;
+  margin: 0;
+  }
+
+.cim img {
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  }
+
+/* Location rész formázása */
+
+.locations {
+  width: 100vw;
+}
+
+.oszlop img{
+  height: 5rem;
+  width: auto;
+}
+
+.oszlop h2 {
+  font-weight: bold;
+}
+
+.oszlop p {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  /*line-height: 0;*/
+}
+
+.oszlop p:last-child {   /* az utolsó bekezdés után levenni az alsó margin-t. */
+  margin-bottom: 0;
+}
+
+.oszlop::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: .5rem auto;
+  background-color: #444349;
+}
+
+/* Program rész formázása */
+.program {
+  width: 100vw;
+  background: hsla(100,0%,0%,.6); /* szürke háttér, kicsit átlátszó */
+  color: #d2ba87; /* alternate text color: #d2ba87 (gold) */
+}
+.program_reszletek{
+  font-family: 'Muli', sans-serif;
+  margin-top: 0rem; /* To account for the unequal margins compared to the previous section. */
+  text-align: left;
+  font-style: italic;
+}
+
+.program_reszletek section{
+  text-align: left;
+  line-height: 0;
+  font-style: normal;
+  letter-spacing: .05rem;
+}
+
+.program_reszletek p:last-child {   /* To even out the bottom and top margins of this section. */
+  margin-bottom: 1rem;
+}
+/* Gifts rész formázása */
+
+.gifts img{
+  height: 5rem;
+  width: auto;
+}
+
+.gifts p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+}
+
+.gifts p:last-child {   /* az utolsó bekezdés után levenni az alsó margin-t. */
+  margin-bottom: 0;
+}
+
+/* Faq rész formázása */
+
+.faq {
+  width: 100vw;
+  background: hsla(100,0%,0%,.6); /* szürke háttér, kicsit átlátszó */
+  color: #d2ba87; /* alternate text color: #d2ba87 (gold) */
+}
+
+.faq-oszlop {
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+}
+
+.faq-oszlop::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.faq-oszlop h2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+}
+
+.kérdés {
+  font-weight: 700; /* bold betű */
+  margin-bottom: .5rem;
+}
+
+.válasz {
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #606060;
+  text-align: center;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-size: .875rem;  /* 14px betűméret */
+  display: table;
+}
+
+.kozepre {
+  display: table-cell;   /* a .kozepre a .footer egyetlen cellája */
+  vertical-align: middle; /* a cella középre rendezése */
+}
+.footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 325px) {
+
+  .header {
+    border-radius: 50px;
+    }
+
+@media (min-width: 768px) {
+
+  .cim {
+    border-radius: 6px;
+     width: 80%;
+  }
+
+  /*.cim h1 {
+    font-size: 5rem;
+  }*/
+
+  .tagline {
+    text-transform: uppercase;
+  }
+  
+  /* location rész */
+  .oszlop {
+    display: inline-block;
+    width: 30%;
+    padding: 0;
+    margin: .5rem 0 0 0;
+  }
+
+  .oszlop::after {
+    display: none; /* elválasztók ne jelenjenek meg */
+  }
+
+  /* program rész */
+  .program_reszletek {
+    width: 35vw;
+  }
+
+  /* faq rész */
+  .faq-oszlop {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+ .faq-oszlop::after {
+    display: none;
+  }
+
+  .faq-oszlop h2 {
+    text-align: left;
+  }
+
+  .footer {
+    min-height: 7vh;
+  }
+}
