@@ -57,7 +57,7 @@ a:hover {
 }
 
 .header {
-  background: url('https://i.imgur.com/Ss8UZjW.png');
+  background: url("https://i.imgur.com/Ss8UZjW.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% top;
